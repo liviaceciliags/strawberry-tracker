@@ -3,7 +3,7 @@
     <header class="w-full bg-white shadow-md py-6 mb-8 flex flex-col items-center">
       <h1 class="text-3xl font-bold text-pink-700 flex items-center gap-2">
         <span>Strawberry Tracker</span>
-        <span aria-label="Morango" class="text-3xl">🍓</span>
+        <span aria-label="Morango" class="text-3xl">🍓🍓</span>
       </h1>
       <p class="mt-2 text-gray-600 text-center max-w-xl">
         Aplicação web para produtores de morango registrarem e gerenciarem suas produções diárias de caixas.
