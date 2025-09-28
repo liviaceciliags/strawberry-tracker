@@ -27,16 +27,20 @@ jobs:
          npm ci
 
       - name: Instalar ferramentas de teste
-        run: npm install -D vitest @vitest/ui @vue/test-utils
+        run: |
+         cd strawberry-prod
+         npm install -D vitest @vitest/ui @vue/test-utils
 
       - name: Executar testes
-        run: npm run test -- --reporter junit --outputFile test-report.xml
+        run: |
+         cd strawberry-prod
+         npm run test -- --reporter junit --outputFile test-report.xml
 
       - name: Salvar relatório de testes
         uses: actions/upload-artifact@v4
         with:
           name: relatorio-testes
-          path: test-report.xml
+          path: strawberry-prod/test-report.xml
 
   build:
     runs-on: ubuntu-latest
