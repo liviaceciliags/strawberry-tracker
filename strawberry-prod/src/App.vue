@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <header class="introduction flex justify-center items-center flex-col">      
+    <header class="introduction flex justify-center items-center flex-col shadow-md">      
       <h1 class="title">
         <span>Strawberry Tracker</span>
         <span aria-label="Morango!" class="text-3xl">🍓</span>
@@ -10,9 +10,7 @@
         O sistema conta com tela de login, área de controle de produção, integração planejada com API em Python (FastAPI) e banco de dados MySQL.
       </p>
     </header>
-    <!-- Conteúdo principal pode ser adicionado aqui -->
-    <main class="main" justify-content: center>
-      <!-- Exemplo de card de boas-vindas -->
+    <main class="main justify-center">
       <div class="bg-white rounded-xl shadow-lg p-8 max-w-md w-full text-center">
         <h2 class="text-xl font-semibold text-pink-600 mb-2">Bem-vindo!</h2>
         <p class="text-gray-500">Comece registrando sua produção diária ou acesse o painel de controle.</p>
@@ -28,7 +26,6 @@
 </script>
 
 <style scoped>
-/* Personalização extra se necessário */
 
 .register {
   background-color: #e23c3c; 
