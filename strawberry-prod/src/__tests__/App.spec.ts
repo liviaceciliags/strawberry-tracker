@@ -3,7 +3,6 @@ import { mount } from '@vue/test-utils'
 import App from '../App.vue'
 
 describe('App.vue', () => {
-    // Casos positivos
     it('renderiza o título corretamente', () => {
         const wrapper = mount(App)
         expect(wrapper.text()).toContain('Strawberry Tracker')
