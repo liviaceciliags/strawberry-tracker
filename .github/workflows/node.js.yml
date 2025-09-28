@@ -78,9 +78,6 @@ jobs:
       EMAIL_DESTINO: ${{ secrets.EMAIL_DESTINO }}
     steps:
       - uses: actions/checkout@v4
-
-      - name: print email
-        run: echo "Email destino: $EMAIL_DESTINO"
-      
+            
       - name: Send notification
         run: sh .github/scripts/send_email.sh
