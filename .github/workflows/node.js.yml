@@ -60,13 +60,15 @@ jobs:
          npm ci
 
       - name: Build do projeto
-        run: npm run build
+        run: |
+         cd strawberry-prod
+         npm run build
 
       - name: Salvar pacote buildado
         uses: actions/upload-artifact@v4
         with:
           name: pacote-build
-          path: dist/
+          path: strawberry-prod/dist/
 
   notification:
     needs: test
