@@ -34,7 +34,7 @@ jobs:
       - name: Executar testes
         run: |
          cd strawberry-prod
-         npm run test -- --reporter junit --outputFile test-report.xml
+         npm run test -- --reporter mocha-junit-reporter --reporter-options mochaFile=test-report.xml
 
       - name: Salvar relatório de testes
         uses: actions/upload-artifact@v4
