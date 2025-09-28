@@ -1,9 +1,12 @@
-import { defineConfig } from 'vitest/config'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from "vitest/config";
 
 export default defineConfig({
-  plugins: [vue()],
   test: {
-    environment: 'jsdom'
-  }
-})
+    globals: true,
+    environment: "jsdom",
+    reporters: [
+      "default",
+      ["junit", { outputFile: "test-report.xml" }]
+    ],
+  },
+});

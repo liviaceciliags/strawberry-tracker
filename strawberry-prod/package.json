@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
-    "test": "mocha --loader ts-node/esm \"src/**/*.spec.ts\""
+    "test": "vitest run"
   },
   "dependencies": {
     "axios": "^1.11.0",
