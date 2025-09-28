@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "mocha --reporter spec"
   },
   "dependencies": {
     "axios": "^1.11.0",
@@ -24,6 +25,7 @@
     "@vue/tsconfig": "^0.7.0",
     "autoprefixer": "^10.4.21",
     "jsdom": "^26.1.0",
+    "mocha": "^11.7.2",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.12",
     "typescript": "~5.8.3",
