@@ -47,5 +47,11 @@ npm run dev
 - npm run build
 - npm run preview
 
+## Histórico de Conflito
 
+Durante o desenvolvimento, ocorreu um conflito proposital no arquivo `App.vue`, na linha do emoji do título.  
+Um colaborador adicionou o emoji de uva (🍇) e outro manteve o emoji de morango (🍓).  
+O conflito foi resolvido deixando apenas o emoji de morango (🍓) para manter a identidade do projeto.
+
+Esse ajuste foi feito na mesma linha do código, garantindo clareza e padronização visual.
 
