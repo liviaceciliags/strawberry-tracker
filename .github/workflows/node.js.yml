@@ -74,10 +74,11 @@ jobs:
   notification:
     needs: test
     runs-on: ubuntu-latest
+    environment: test
     env:
       EMAIL_DESTINO: ${{ secrets.EMAIL_DESTINO }}
     steps:
       - uses: actions/checkout@v4
-            
+
       - name: Send notification
         run: sh .github/scripts/send_email.sh
