@@ -55,3 +55,31 @@ O conflito foi resolvido deixando apenas o emoji de morango (🍓) para manter a
 
 Esse ajuste foi feito na mesma linha do código, garantindo clareza e padronização visual.
 
+## Testes com Mocks
+
+Este projeto utiliza Vitest e Vue Test Utils para garantir a qualidade do componente principal (App.vue).
+Foram implementados 20 testes automatizados, cobrindo casos positivos, negativos e cenários de navegação simulada.
+
+## Estrutura dos testes
+
+Casos de renderização:
+Verificação de título, emojis, textos de instrução, classes CSS e estrutura da página.
+
+Casos negativos:
+Garantem que elementos inexistentes (ex.: botão de logout, campos de input) não apareçam na tela inicial.
+
+Mocks de navegação:
+O vue-router foi mockado usando vi.mock, permitindo simular o comportamento do useRouter().
+
+Clique no botão Registrar Produção → router.push('/register')
+
+Clique no botão Acessar Painel → router.push('/dashboard')
+
+Testes confirmam que múltiplos cliques chamam o método o número correto de vezes.
+
+## Cobertura
+
+Total de testes: 20
+Inclui: Renderização de elementos, classes de estilo, acessibilidade (aria-label), mocks de eventos de clique e casos negativos.
+Objetivo: Garantir que a interface inicial funcione corretamente e que as ações de navegação sejam disparadas de forma controlada.
+
